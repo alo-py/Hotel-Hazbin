@@ -1,0 +1,224 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #F0E0C7;
+    --secundario: #9B8562;
+    --terciario: #705935;
+    --cuarto: #332207;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    width: auto;
+    background-color: var(--negro);
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#hora{
+    color: white;
+    flex-grow: 2;
+}
+
+nav
+{
+    display: flex;
+    gap: 20px;
+    color: white;
+    padding: 0px 40px;
+}
+
+nav input
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+a {
+    text-decoration: none; 
+    color: white; 
+}
+
+nav a:hover, nav input:hover
+{
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#precio{
+    text-align: right;
+}
+
+#maxOccu, #sizeR{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#s1, #m1{
+    margin-bottom: -10px;
+}
+
+
+footer{
+    background-color: #333;
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+.franjaBlanca{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenedor{
+    width: 60%;
+	max-width: 1920px;
+	margin: auto;
+	padding: 0px;
+}
+
+.contenedorHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorHabitaciones{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contenedorDoble{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+
+.contenedorDobleFlexBox{
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.containerDobleFlexBox i, .containerDobleFlexBox h4 {
+    margin-right: 10px; /* Espacio entre los elementos */
+}
+
+.contenedor2{
+    width: 60%;
+	max-width: 1920px;
+    display: grid; /* Usar flexbox */
+    grid-template-columns: repeat(2,1fr);
+    gap: 20%;
+    align-items: center; /* Centrar verticalmente */
+    margin: auto;
+	padding: 0px;
+}
+
+#paso, #hab{
+    margin-left: 375px;
+}
+
+.imagen{
+    width: 100%;
+    justify-content: center;
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.btn-field{
+    margin-top: -20px;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: var(--secundario);
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card{
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.secDer{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.secIzq{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    width: 130%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .franjaBlanca{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contenedorHabitaciones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,151 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #F0E0C7;
+    --secundario: #9B8562;
+    --terciario: #705935;
+    --cuarto: #332207;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    width: auto;
+    background-color: var(--negro);
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#hora{
+    color: white;
+    flex-grow: 2;
+}
+
+nav
+{
+    display: flex;
+    gap: 20px;
+    color: white;
+    padding: 0px 40px;
+}
+
+nav input
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+a {
+    text-decoration: none; 
+    color: white; 
+}
+
+nav a:hover, nav input:hover
+{
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contenedorHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor3
+{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contenedor3 h3{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.form-admin{
+    width: 100%;
+    border: 1px solid #636363;
+    margin: 20px;
+    padding: 20px;
+}
+
+.form-admin label{
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-admin input, select{
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: content-box;
+    border: 1px solid #ccc;
+}
+
+.form-admin input[type="date"]{
+    width: 96%;
+}
+
+.form-admin button{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 0;
+    background: #1668C4;
+    color: #fff;
+    border: none;
+}
+
+.form-admin button:hover{
+    background: #0c396d;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #333;
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}

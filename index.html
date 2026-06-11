@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazbin Hotel</title>
+
+    <!-- Fuente Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Fuente Inria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilos -->
+    <link rel="preload" href="css/estilosV2.css" as="style">
+    <link href="css/estilosV2.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.svg">
+
+    <!-- Añade el CSS para la ruleta -->
+</head>
+<body>
+    <header id="inicio">
+            <div id="logo">
+                <img src="img/HAZBIN HOTEL.png">
+            </div>
+            <div id="hora"></div>
+            <div id="letrero">
+                Bienvenido al Hotel Hazbin
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#planesOfertas">Ofertas</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <input type="button" value="Iniciar Sesion" onclick="window.location.href='login.html'" style="cursor: pointer;"/>
+            </nav>
+    </header>
+    <main>
+        <!-- IMAGEN DE BIENVENIDA AL HOTEL-->
+        <div class="contenedorImagenInicio">
+            <img src="img/logo.svg" class="logoImagenInicio">
+            <form action="php/fecha.php">
+                <div>
+                    <label> Check-In</label>
+                    <input type="date" name="FechaEntrada" id="idFechaEntrada" value="2024-03-22">
+                </div>
+                <div>
+                    <label> Check-Out</label>
+                    <input type="date" name="FechaSalida" id="idFechaSalida">
+                </div>
+                <div>
+                    <label for="idNumAdultos">Adultos</label>
+                    <select name="Adultos" id="idNumAdultos">
+                    <option value="1" selected>1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="idNumNiños">Niños</label>
+                    <select name="Niños" id="idNumNiños">
+                    <option value="0">0</option>
+                    <option value="1" selected>1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    </select>
+                </div>
+                <input id="btnReserva" type="button" name="Reservar" id="idReservar" value="Reservar" onclick="window.location.href='registro.html'">
+            </form>
+        </div>
+        
+        <div class="contenedorGeneral">
+        <!-- MENSAJE DE BIENVENIDA (INSERTAR JAVASCRIPT DESPUES)-->
+        <section class="contenedor">
+            <h4>Bienvenido a</h4>
+            <h3>Hotel Hazbin</h3>
+            <p><b>
+                Donde cada momento se convierte en un recuerdo inolvidable.
+            </b></p>
+            <p>
+                Nuestro hotel combina a la perfección la elegancia contemporánea con un servicio excepcional para ofrecerle<br> una experiencia única y memorable. 
+                Situado en una ubicación privilegiada, estamos a solo unos pasos de las principales<br> atracciones turísticas, tiendas exclusivas y vibrantes
+                lugares de entretenimiento.
+            </p>
+        </section>
+
+        <!-- SECCION DE OFERTAS -->
+        <h2 id="titleOferta">Ofertas y planes</h2>
+        <section id="planesOfertas">
+            <div class="contenedor3">
+                <div class="card" style="background-image: url('./img/escapadaRomantica.jpg')"></div>
+                <div class="card" style="background-image: url('./img/familia.jpg')"></div>
+                <div class="card" style="background-image: url('./img/Relajacion.jpg')"></div>
+                <div>
+                    <h4>Escapada Romantica</h4>
+                    <p>Reconecte en un entorno tranquilo con vistas impresionantes y un ambiente relajado en este santuario frente al mar.</p>
+                </div>
+                <div>
+                    <h4>Aventuras en familia</h4>
+                    <p>Juegue en el paraíso en este ambiente acogedor para los niños, con una piscina infinita y un relajado ambiente frente a la playa.</p>
+                </div>
+                <div>
+                    <h4 >Relajacion Aislada</h4>
+                    <p>Sumérjase en una exuberante selva tropical y relájese rodeado de armonía natural en este paraíso familiar.</p>
+                </div>
+                <button id="b1" class="boton">Leer más</button>
+                <button id="b2" class="boton">Leer más</button>
+                <button id="b3" class="boton">Leer más</button>
+            </div> 
+        </section>
+
+        <section id="habitaciones" class="contenedor2">
+            <div>
+                <h2>Habitaciones</h2>
+                <p>Nuestras habitaciones están diseñadas para tu comodidad y relajación. Ofrecemos habitaciones individuales, dobles y suites, todas equipadas con comodidades modernas.</p>
+                <button class="boton">Mas detalles</button>
+            </div>
+            <div id="slider">
+                <div class="slide-container">
+                    <div class="slides">
+                        <img src="img/habitacion1.jpg" class="active"/>
+                        <img src="img/habitacion2.jpg"/>
+                        <img src="img/habitacion3.jpeg"/>
+                    </div>
+                    <div class="buttons">
+                        <span class="next">&#10095;</span>
+                        <span class="prev">&#10094;</span>
+                    </div>
+                    <div class="dotsContainer">
+                        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                    </div>
+                </div>       
+            </div>
+        </section>
+
+        <!-- SECCION DE SERVICIOS -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Nuestro hotel se enorgullece de ofrecer una amplia gama de servicios diseñados para satisfacer las necesidades<br>
+            y comodidades de nuestros estimados huéspedes. Desde el momento en que pones un pie en<br>
+            nuestras instalaciones, nos dedicamos a proporcionarte una experiencia inolvidable y sin preocupaciones.</p>
+            <div class="contenedor3">
+                <div class="card" style="background-image: url('./img/piscina.jpg')"></div>
+                <div class="card" style="background-image: url('./img/restaurante.jpg')"></div>
+                <div class="card" style="background-image: url('./img/gym.jpg')"></div>
+                <div>
+                    <p>Piscina al aire libre para todo tipo de publico</p>
+                    <button class="boton">Leer mas</button>
+                </div>
+                <div>
+                    <p>Restaurante con cocina internacional disponible</p>
+                    <button class="boton">Leer mas</button>
+                </div>
+                <div>
+                    <p>Gimnasio totalmente equipado para todos</p>
+                    <button class="boton">Leer mas</button>
+                </div>
+                <div></div>
+                <div>
+                    <button class="boton">Ver todos los servicios</button>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+        </div> <!-- div contenedor general -->
+    </main>
+    <footer>
+        &copy; 2024 Hotel Hazbin. Todos los derechos reservados.
+    </footer>
+    <script src="js/tiempo.js"></script>
+    <script src="js/imagenSlider.js"></script>
+    
+    <script src="js/letrero.js"></script>
+    <script src="js/contadorVisitantes.js"></script>
+</body>
+</html>

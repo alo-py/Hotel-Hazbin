@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+
+    <!-- Fuente Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Fuente Inria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Estilos -->
+    <link rel="preload" href="css/usuario.css" as="style">
+    <link href="css/usuario.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.svg">
+
+    <!-- PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ARDZsU-mgBP6g_3xhI8WdHUU9-IgG2YAWuuBTfddrVE0LDs7lCDGX2rt69NaOGIP7pny84QetkAZKZSI&currency=MXN"></script>
+            
+
+</head>
+<body>
+    <header id="inicio">
+        <div id="logo">
+            <img src="img/HAZBIN HOTEL.png">
+        </div>
+        <div id="hora"></div>
+        <nav>
+            <input type="button" value="Cerrar Sesión" onclick="window.location.href='indexV2.html'" style="cursor: pointer;"/>
+        </nav>
+    </header>
+    
+    <br><br><br><br><br>
+
+    <!-- PRIMERA SECCION  -->
+
+    <div class="franjaBlanca" style="background-color: white; width: 100%; padding: 1px;">
+        <h3 style="font-weight: normal; color: #705935;">Paso 1/2 |</h3>
+        <h3 style="font-family: Montserrat, sans-serif; font-size: 25px;">Selecciona tu habitación</h3>
+    </div>
+
+    <div class="contenedor"> <!-- CONTENEDOR PRINCIPAL -->
+
+        <h1>Habitaciones</h1>
+
+        <div class="contenedorHabitaciones">  <!-- CONTENEDOR HABITACIONES -->
+        <!-- HABITACION 1 -->
+        <div class="card">
+            <img class="imagen" src="img/habitacion1.jpg">
+            <h2>Zen Gran Pool Nature View Suite</h2>
+
+            <div class="contenedorDoble">
+                <div>
+                    <h4 id="m1">Max Occupancy</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-regular fa-user" id="user"></i>
+                        <h4 id="maxOccu">2 People</h4>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 id="s1">Size</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-solid fa-ruler" id="regla"></i>
+                        <h4 id="sizeR">100 m2 / 1184 ft2</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: left;">
+                <h4>Featured Amenities</h4>
+                <i class="fa-solid fa-bed"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-toilet"></i>
+                <p><a id="aRegistro" href="registro.html">Room details</a></p>
+            </div>
+            
+            <hr>
+            <div style="text-align: right;">
+                <h2 id="precio">USD 1,319.00</h2>
+                <h4 style="margin-top: -20px; font-weight: normal; color: rgb(78, 78, 78);">Avg. per night<br>
+                Includes taxes and fees<br>
+                Featured Amenities<br>
+                <div class="contenedorDobleFlexBox" style="margin-left: 43px; gap: 5px;">
+                    <h4>Non refundable rate/No Groups</h4>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+        
+            <div class="btn-field">
+                <button id="seleccionar" type="button">Select this rate</button><br>
+                <button id="seleccionar" type="button">+ More rates</button>    
+            </div>
+        </div>
+
+        <!-- HABITACION 2 -->
+        <div class="card">
+            <img class="imagen" src="img/habitacion2.jpg">
+            <h2>Zen Gran Pool Nature View Suite</h2>
+
+            <div class="contenedorDoble">
+                <div>
+                    <h4 id="m1">Max Occupancy</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-regular fa-user" id="user"></i>
+                        <h4 id="maxOccu">8 People</h4>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 id="s1">Size</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-solid fa-ruler" id="regla"></i>
+                        <h4 id="sizeR">140 m2 / 1024 ft2</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: left;">
+                <h4>Featured Amenities</h4>
+                
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-toilet"></i>
+                <p><a id="aRegistro" href="registro.html">Room details</a></p>
+            </div>
+            
+            <hr>
+            <div style="text-align: right;">
+                <h2 id="precio">USD 1,824.00</h2>
+                <h4 style="margin-top: -20px; font-weight: normal; color: rgb(78, 78, 78);">Avg. per night<br>
+                Includes taxes and fees<br>
+                Featured Amenities<br>
+                <div class="contenedorDobleFlexBox" style="margin-left: 43px; gap: 5px;">
+                    <h4>Non refundable rate/No Groups</h4>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+        
+            <div class="btn-field">
+                <button id="seleccionar" type="button">Select this rate</button><br>
+                <button id="seleccionar" type="button">+ More rates</button>    
+            </div>
+        </div>
+
+
+        <!-- HABITACION 3 -->
+        <div class="card">
+            <img class="imagen" src="img/habitacion3.jpeg">
+            <h2>Zen Gran Pool Nature View Suite</h2>
+
+            <div class="contenedorDoble">
+                <div>
+                    <h4 id="m1">Max Occupancy</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-regular fa-user" id="user"></i>
+                        <h4 id="maxOccu">2 People</h4>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 id="s1">Size</h4>
+                    <div class="contenedorDobleFlexBox">
+                        <i class="fa-solid fa-ruler" id="regla"></i>
+                        <h4 id="sizeR">118 m2 / 1270 ft2</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: left;">
+                <h4>Featured Amenities</h4>
+                <i class="fa-solid fa-wifi"></i>
+                <p><a id="aRegistro" href="registro.html">Room details</a></p>
+            </div>
+            
+            <hr>
+            <div style="text-align: right;">
+                <h2 id="precio">USD 1,100.00</h2>
+                <h4 style="margin-top: -20px; font-weight: normal; color: rgb(78, 78, 78);">Avg. per night<br>
+                Includes taxes and fees<br>
+                Featured Amenities<br>
+                <div class="contenedorDobleFlexBox" style="margin-left: 43px; gap: 5px;">
+                    <h4>Non refundable rate/No Groups</h4>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+        
+            <div class="btn-field">
+                <button id="seleccionar" type="button">Select this rate</button><br>
+                <button id="seleccionar" type="button">+ More rates</button>    
+            </div>
+        </div>
+
+        </div> <!-- contenedorHabitaciones -->
+    </div> <!-- contenedor -->
+
+    <div class="franjaBlanca" style="background-color: white; width: 100%; padding: 1px;" >
+        <h3  style="font-weight: normal; color: #705935;">Paso 2/2 |</h3>
+        <h3  style="font-family: Montserrat, sans-serif; font-size: 25px;">Selecciona tu metodo de pago</h3>
+    </div>
+
+    <div class="contenedor2">
+        <div class="secIzq">
+            <!-- informacion del cliente -->
+            <h2>Informacion del cliente</h2>
+
+            <div class="input-group">
+                <form class="form-Info" action="php/recib.php">
+                    <div class="input-field">
+                        <input id="inputR" type="text" placeholder="First Name *">
+                    </div>
+                    <div class="input-field">
+                        <input id="inputR" type="text" placeholder="Last Name *">
+                    </div>
+                    <div class="input-field">
+                        <input id="inputR" type="text" placeholder="Email Address *">
+                    </div>
+                    <div class="input-field">
+                        <input id="inputR" type="text" placeholder="Phone Number *">
+                    </div>
+                </form>
+            </div>
+            
+
+            <div class="divPago">
+                <!-- Metodo de pago -->
+                <h3>Pay with Credit/Debit Card</h3>
+                <p>A valid form of payment must be presented at check-in</p>
+            
+                <div id="paypal-button-container">
+                    <script>
+                        paypal.Buttons(
+                            {
+                                style:{
+                                    color: 'blue',
+                                    shape: 'pill',
+                                    label: 'pay' 
+                        
+                                }
+                            }
+                        ).render('#paypal-button-container')
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="secDer">
+            <!-- informacion de la reservacion -->
+            <h3>Zen Grand Pool Nature View Suite</h3>
+            <p>Non refundable rate/No groups<br>
+            Sun, May 05, 2024 - Mon, May 06, 2024<br>
+            2 adults | 1 night USD 1,319.00
+            </p>
+            <hr>
+
+            <div class="contenedorInfo">
+                <div>
+                    <h3>Reservation Subtotal</h3>
+                </div>
+                <div>
+                    <p id="c2">USD 1,319.00</p>
+                </div>
+                <div>
+                    <h3>Total Reservation</h3>
+                </div>
+                <div>
+                    <h3 id="c2">USD 1,319.00</h3>
+                </div>
+                <div>
+                    <h4>Included in the rate</h3>
+                </div>
+                <div></div>
+                <div>
+                    <p>Tax</p>
+                </div>
+                <div>
+                    <p id="c2">USD 228.92</p>
+                </div>
+            </div>
+        </div>
+            <hr>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Hotel Hazbin. Todos los derechos reservados.
+    </footer>
+    <script src="js/scrollear.js"></script>
+</body>
+</html>

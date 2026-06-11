@@ -1,0 +1,621 @@
+/*ELEMENTOS GENERALES*/
+:root
+{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #F0E0C7;
+    --secundario: #9B8562;
+    --terciario: #705935;
+    --cuarto: #332207;
+}
+
+header
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    width: auto;
+    background-color: var(--negro);
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0;
+    background-color:var(--blanco);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    width: auto;
+}
+
+footer{
+    background-color: #333;
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+#letrero
+{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+/*TIPOGRAFIAS GENERALES*/
+h3{
+    font-size: 2rem;
+    text-align: left;
+}
+
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    padding-bottom: 0px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#titulogaleria
+{
+    margin-bottom: -200px;
+    display: flex;
+    justify-content: center;
+}
+
+/*ELEMENTOS DEL HEADER*/
+#hora{
+    color: white;
+    flex-grow: 2;
+}
+
+nav
+{
+    display: flex;
+    gap: 20px;
+    color: white;
+    padding: 0px 40px;
+}
+
+nav input
+{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+a {
+    text-decoration: none; 
+    color: white; 
+}
+
+nav a:hover, nav input:hover
+{
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+
+/*FORMULARIO*/
+.imagenBienvenida > form
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-sizing: border-box;
+    align-items: baseline;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;   
+    background-color:rgba(0, 0, 0);
+    width: auto;
+}
+
+/*CONTENEDORES*/
+.contenedorGeneral
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contenedor, #servicios, #login, #planesOfertas
+{
+    width: auto;
+	margin: auto;
+    background-color: #ffffff;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor > h3
+{
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 0px; 
+}
+
+.contenedor2
+{
+    width: 50%;
+    position: relative;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 100px;
+    margin: auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor3
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 100px;
+    box-sizing: border-box;
+    gap: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+#titleOferta
+{
+    display: flex;
+    justify-content: center;
+}
+
+#servicios > .contenedor3 > div
+{
+    background-color: rgba(201, 198, 198, 0.541);
+    text-align: center;
+    padding: 10px;
+}
+
+#servicios > .contenedor3 > :nth-child(n+7):nth-child(-n+9)
+{
+    background-color: white;
+}
+
+/*IMAGENES*/
+
+.contenedorImagenInicio
+{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 300px;
+    position: relative;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.contenedorImagenInicio form
+{
+    display: flex;
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--blanco);
+    background-color: #000000;
+}
+
+.logoImagenInicio
+{
+    width: 200px; 
+    height: auto;
+    margin-bottom: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.card
+{
+    border-radius: 0%;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+/*SLIDER*/
+.slide-container
+{
+    position: relative;
+    width: 340px;
+    height: 300px;
+    border: 1pc solid #ede6de;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.slide-container .slides
+{
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container .slides img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide-container .slides img:not(.active)
+{
+    top: 0;
+    left: -100%;
+}
+
+span.next, span.prev
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #eee;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+span.next
+{
+    right: 10px;
+}
+span.prev
+{
+    left: 10px;
+}
+
+span.next:hover, span.prev:hover
+{
+    background-color: #ede6d6;
+    opacity: 0.8;
+    color: #222;
+}
+
+.dotsContainer
+{
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dotsContainer .dot
+{
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotsContainer .active
+{
+    background-color: #555;
+}
+
+
+/*BOTONES*/
+.boton
+{
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    display: inline-block;
+    background-color: var(--secundario);
+}
+
+.contenedor3 > button
+{
+    margin: auto;
+    width: 90%;
+}
+
+.boton:hover
+{
+    background-color:var(--cuarto); 
+    color: white;
+}
+
+
+/*LOGIN/REGISTRO*/
+.contenedorLogin
+{
+    width: 100%;
+    height: 70vh;
+    background-color: #332207;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content
+{
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--negro);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-content h1
+{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--blanco);
+    position: relative;
+}
+
+.form-content h1::after
+{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--secundario);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field 
+{
+    background-color: var(--blanco);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.form-content input
+{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: var(--negro);
+}
+
+.form-content input::placeholder
+{
+    color: var(--negro);
+}
+
+.input-field i
+{
+    margin-left: 15px;
+}
+
+.form-content form p
+{
+    color: var(--blanco);
+    text-align: left;
+    font-size: 15px;
+}
+
+.form-content form p a
+{
+    color: rgb(47, 141, 228);
+    margin-left: 5px;
+}
+
+.btn-field
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button
+{
+    flex-basis: 100%;
+    font-size: 16px;
+    background-color: #9B8562;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group
+{
+    height: 250px;
+}
+
+.btn-field button.disable
+{
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.warnings
+{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+/* Para tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    nav a, nav input {
+        font-size: 16px;
+    }
+
+    .contenedorImagenInicio {
+        height: 250px;
+    }
+
+    .logoImagenInicio
+    {
+        display: none;
+    }
+    
+    .contenedorImagenInicio form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 25px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .contenedorImagenInicio form #btnReserva
+    {
+        border: none; 
+        color: white; 
+        padding: 15px 32px; 
+        text-align: center; 
+        text-decoration: none; 
+        font-size: 16px; 
+        cursor: pointer; 
+        border-radius: 8px; 
+        display: inline-block;
+        background-color: var(--secundario);
+        height: 40px;
+    }
+
+    .contenedor, #servicios, #login, #planesOfertas {
+        padding: 20px;
+    }
+
+    .contenedor2 {
+        width: 90%;
+        padding: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor3 #b1, #b2
+    {
+        display: none;
+    }
+
+    .card{
+        display: none;
+    }
+
+    .slide-container {
+        width: 100%;
+    }
+
+    .slide-container .slides img {
+        height: 250px;
+    }
+}
+
+@keyframes next1
+{
+    from{
+        left: 0%;
+    }to{
+        left: -100%;
+    }
+}
+
+@keyframes next2
+{
+    from{
+        left: 100%;
+    }to{
+        left: 0%;
+    }
+}
+
+@keyframes prev1
+{
+    from{
+        left: 0%;
+    }to{
+        left: 100%;
+    }
+}
+
+@keyframes prev2
+{
+    from{
+        left: -100%;
+    }to{
+        left: 0%;
+    }
+}
+
+
