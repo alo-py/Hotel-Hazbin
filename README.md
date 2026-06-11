@@ -2,9 +2,9 @@
 
 Plataforma web responsiva diseñada para la visualización de servicios hoteleros y la gestión intuitiva de reservaciones. El objetivo principal de este proyecto fue optimizar la arquitectura de información para transformar un proceso de registro complejo en una experiencia de usuario fluida, limpia y libre de fricciones.
 
-## 💻 Interfaz Web y Adaptabilidad (UI/UX)
+## Interfaz Web y Adaptabilidad (UI/UX)
 
-A continuación se muestra el comportamiento visual de la plataforma en su entorno web:
+A continuación se muestra el comportamiento visual de la plataforma en el entorno web:
 
 | 1. Vista de Escritorio (Desktop View) | 2. Diseño Responsivo | 3. Login | 4. Registro | 5. Reserva |
 |---|---|---|---|---|
